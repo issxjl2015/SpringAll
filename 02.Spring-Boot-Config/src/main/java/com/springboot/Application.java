@@ -1,5 +1,6 @@
 package com.springboot;
 
+import com.springboot.bean.issxjlbean.IssxjlConfigBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -8,7 +9,7 @@ import com.springboot.bean.ConfigBean;
 import com.springboot.bean.TestConfigBean;
 
 @SpringBootApplication
-@EnableConfigurationProperties({ConfigBean.class,TestConfigBean.class})
+@EnableConfigurationProperties({ConfigBean.class,TestConfigBean.class, IssxjlConfigBean.class})
 //@ImportResource({"classpath:some-application.xml"})
 public class Application {
 	
